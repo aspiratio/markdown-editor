@@ -125,14 +125,14 @@ export const History: React.FC<Props> = (props) => {
           onClick={() => movePage(page - 1)}
           disabled={!canPrevPage}
         >
-          ＜
+          {/* ページ移動のボタン */}＜
         </PagingButton>
         {page} / {maxPage}
         <PagingButton
           onClick={() => movePage(page + 1)}
           disabled={!canNextPage}
         >
-          ＞
+          {/* ページ移動のボタン */}＞
         </PagingButton>
       </Paging>
     </>
